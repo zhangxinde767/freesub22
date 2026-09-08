@@ -19,18 +19,17 @@ proxies:
       Host: 189.74.97.47
 - name: 🇺🇿 UZ 02 - xiaohe
   type: vless
-  server: 104.18.80.149
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
+  server: 189.74.97.43
+  port: 2087
+  uuid: 10f7eb2d-d96d-4778-9d36-aff11e9d6629
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
+    path: /73b6faea2d00
     headers:
-      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+      Host: 189.74.97.43
 proxy-groups:
 - name: PROXIES
   type: select
