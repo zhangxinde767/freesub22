@@ -71,16 +71,17 @@ proxies:
       Host: 70.34.255.101
 - name: 🇵🇱 PL 06 - xiaohe
   type: vless
-  server: 78.17.109.97
-  port: 6443
-  uuid: dfe8ea9e-fd77-48e6-86ee-7bc1019de1e7
+  server: 70.34.255.101
+  port: 80
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: NP5_ymQeqYr_EP7aAPIl3YBRghX60zLq6m74Ht4bFUI
-  servername: ok.ru
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.255.101
 proxy-groups:
 - name: PROXIES
   type: select
