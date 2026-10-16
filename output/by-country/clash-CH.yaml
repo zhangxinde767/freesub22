@@ -5,13 +5,55 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - xiaohe
+  type: vless
+  server: 185.18.250.245
+  port: 443
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
+- name: 🇨🇭 CH 02 - xiaohe
+  type: vless
+  server: 185.18.250.252
+  port: 443
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
+- name: 🇨🇭 CH 03 - xiaohe
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇨🇭 CH 02 - xiaohe
+- name: 🇨🇭 CH 04 - xiaohe
+  type: vless
+  server: 116.204.164.17
+  port: 7443
+  uuid: 0baed386-770e-4e17-a6ca-24349e60903f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇨🇭 CH 05 - xiaohe
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -23,33 +65,21 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 CH 03 - xiaohe
-  type: vless
-  server: 45.133.151.186
-  port: 25393
-  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 04F4vhrx_H_SHsrsVw1eCpwlysu4kL3hTl9GAr00XkI
-  servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇨🇭 CH 04 - xiaohe
+- name: 🇨🇭 CH 06 - xiaohe
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇨🇭 CH 05 - xiaohe
+- name: 🇨🇭 CH 07 - xiaohe
   type: ss
   server: 86.106.84.194
   port: 13261
   cipher: aes-128-gcm
   password: 2bf536a4bd6008511734a505d248de2c
   udp: true
-- name: 🇨🇭 CH 06 - xiaohe
+- name: 🇨🇭 CH 08 - xiaohe
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -61,7 +91,7 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇨🇭 CH 07 - xiaohe
+- name: 🇨🇭 CH 09 - xiaohe
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -73,18 +103,20 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 CH 08 - xiaohe
+- name: 🇨🇭 CH 10 - xiaohe
   type: vless
-  server: 45.133.151.186
-  port: 25414
-  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  server: 147.45.42.73
+  port: 20443
+  uuid: fcbb9617-7b3c-4b21-8a91-a57350a75222
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: KjcB2_xuklgTEHo_L_y3YdGdQoDgA91Yaa3YgRu_Iis
-  servername: www.icloud.com
-  client-fingerprint: ios
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -98,6 +130,8 @@ proxy-groups:
   - 🇨🇭 CH 06 - xiaohe
   - 🇨🇭 CH 07 - xiaohe
   - 🇨🇭 CH 08 - xiaohe
+  - 🇨🇭 CH 09 - xiaohe
+  - 🇨🇭 CH 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -111,5 +145,7 @@ proxy-groups:
   - 🇨🇭 CH 06 - xiaohe
   - 🇨🇭 CH 07 - xiaohe
   - 🇨🇭 CH 08 - xiaohe
+  - 🇨🇭 CH 09 - xiaohe
+  - 🇨🇭 CH 10 - xiaohe
 rules:
 - MATCH,PROXIES
