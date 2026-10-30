@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 172.66.44.124
+  server: 194.87.143.165
   port: 8443
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  servername: wsru1.wba-pn.ru
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+      Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
   server: 186.246.9.29
@@ -32,18 +32,18 @@ proxies:
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  server: 194.55.239.89
+  port: 443
+  uuid: 073b7df7-5527-45a2-ba29-183b85c39071
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
+  servername: broadcast.liveflow.space
   network: ws
   ws-opts:
-    path: /
+    path: /live.stream.v1.Broadcast/
     headers:
-      Host: 194.87.143.165
+      Host: broadcast.liveflow.space
 proxy-groups:
 - name: PROXIES
   type: select
