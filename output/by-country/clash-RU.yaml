@@ -34,15 +34,15 @@ proxies:
       Host: lvi.su
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
-  server: 5.129.249.65
+  server: 135.106.153.131
   port: 443
   uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: iT-HgkPRUHl7Tm-LUWAGD-zoNoZSkVc-M9sscIIomHY
-  servername: rue.tems.bet
+    public-key: OIWmjOL9lOxVRm-ejEvQf_G-Km-5Rw3L-w5d8rhVzQw
+  servername: rug.tems.bet
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: vless
