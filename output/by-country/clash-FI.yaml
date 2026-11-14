@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: s1.berluno.ir
-  port: 1155
-  uuid: 3c999d74-d578-4deb-8683-b017bf6598f0
+  server: 138.124.49.108
+  port: 8443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: o6UTWdONnTOvDOWmhfxXUoeOEtlw7VUkoAWkmOk_FWI
-  servername: tgju.org
-  client-fingerprint: edge
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: fs.qicai99.com
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
   server: 45.144.234.157
@@ -57,18 +59,18 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - xiaohe
   type: vless
-  server: 146.103.118.189
+  server: 138.124.124.157
   port: 443
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nl2.574ck.xyz
+  servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /574ck-finland
+    path: /fp=chrome
     headers:
-      Host: nl2.574ck.xyz
+      Host: fs.qicai99.com
 proxy-groups:
 - name: PROXIES
   type: select
